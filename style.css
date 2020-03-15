@@ -5,12 +5,11 @@ body {
     text-align: center;
     background-image: linear-gradient(to right, rgba(255,255,255), rgba(250, 218, 221));
 }
-
 h1 {
     font-size: 2em;
     color: black !important;
     text-decoration: underline;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 form{
@@ -18,7 +17,7 @@ form{
     margin: 20px auto;
     width: 500px;
     background-color: transparent;
-    padding-top: 20px;
+    padding-top: 10px;
 }   
 
 input {
@@ -31,4 +30,30 @@ input {
     border-radius: 10px;
     border: 3px solid #ccc;
     outline: none !important;
+}
+
+input.valid {
+    border-color: green;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+input + p {
+    font-size: .8em;
+    opacity: 0;
+    margin: 0 10px;
+    height: 0;
+    font-family: 'oswald', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+input.invalid + p {
+    margin: auto;
+    opacity: 1;
+    margin-bottom: 30px;
+
 }
